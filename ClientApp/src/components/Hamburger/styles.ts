@@ -15,6 +15,9 @@ export const MenuLink = styled.a`
     color: white;
     text-decoration: none;
   }
+  @media (max-width: 1100px) {
+    padding: 10px;
+  }
 `;
 
 export const Logo = styled.a`
@@ -51,6 +54,9 @@ export const Menu = styled.div<INav>`
     max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
     transition: max-height 0.3s ease-in;
     width: 100%;
+    span {
+      display: none;
+    }
   }
 `;
 
