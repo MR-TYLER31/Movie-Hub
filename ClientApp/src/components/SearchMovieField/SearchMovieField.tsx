@@ -18,7 +18,7 @@ export default function SearchMovieField() {
         inputProps={{ 'aria-label': 'search movies' }}
         
       />
-      <B.Button style={{outline: "none"}}><SearchIcon sx={{color: "white"}}/></B.Button>
+      <B.Button type="submit" style={{outline: "none"}}><SearchIcon sx={{color: "white"}}/></B.Button>
     </Paper>
   );
 }
