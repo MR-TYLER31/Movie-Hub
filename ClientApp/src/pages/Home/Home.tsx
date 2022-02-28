@@ -4,14 +4,16 @@ import * as H from "./styles";
 export interface IHomeProps {};
 
 const Home: React.FunctionComponent<IHomeProps> = (props) => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState();
 
     useEffect(() => {
       // declare the data fetching function
       const fetchData = async () => {
-        const data = await fetch("https://randomuser.me/api/");
+        const response = await fetch(
+          "http://www.omdbapi.com/?i=tt3896198&apikey=aadd8ead"
+        );
 
-        const json = await data.json();
+        const json = await response.json();
 
         setData(json);
       };
@@ -26,7 +28,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
     return (
 
         <H.Container>
-          <h1>Home Page</h1>
+          <h1>Home page</h1>
           {console.log(data)}
         </H.Container>
 
