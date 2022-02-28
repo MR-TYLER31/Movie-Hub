@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as S from "../styles"
+import * as S from "../Navbar/styles"
 import * as H from "./styles"
 import SearchMovieField from "../SearchMovieField/SearchMovieField";
 

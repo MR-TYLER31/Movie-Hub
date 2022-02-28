@@ -9,7 +9,7 @@ export default function SearchMovieField() {
   return (
     <Paper
       component="form"
-      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 300, height: 35, border: "1px solid white", borderRadius: "25px;" }}
+      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 300, height: 35, border: "3px solid white", borderRadius: "25px;" }}
       style={{backgroundColor: "rgba(0, 0, 0, 0)"}}
     >
       <InputBase
