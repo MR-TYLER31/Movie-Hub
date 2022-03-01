@@ -8,7 +8,7 @@ export interface IApplicationProps {};
 const Application: React.FunctionComponent<IApplicationProps> = (props) => {
     return (
       <BrowserRouter>
-        <Navbar />
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

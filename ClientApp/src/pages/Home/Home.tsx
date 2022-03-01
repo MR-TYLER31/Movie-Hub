@@ -3,6 +3,8 @@ import * as H from "./styles";
 
 export interface IHomeProps {};
 
+
+
 const Home: React.FunctionComponent<IHomeProps> = (props) => {
   const [data, setData] = useState();
 
@@ -14,8 +16,8 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
         );
 
         const json = await response.json();
-
         setData(json);
+        
       };
 
       // call the function
@@ -28,7 +30,7 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
     return (
 
         <H.Container>
-          <h1>Home page</h1>
+          <h1>Hello</h1>
           {console.log(data)}
         </H.Container>
 
